@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Regular.ttf');
+}
+body{
+  font-family: 'Dancing Script';
+
+  background-color: #02010a;
+}
+
+header{
+  text-shadow: 1px 2px #02010a;
+  color: white;
+  width: 100%;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #5b7989;
+/*	background: -o-linear-gradient(right, #5CA861 , #BADFBC); /* For Opera 11.1 to 12.0 */
+/*	background: -moz-linear-gradient(right, #5CA861 , #BADFBC); /* For Firefox 3.6 to 15 */
+/*	background: linear-gradient(to right, #5CA861 , #BADFBC); /* Standard syntax */
+}
+
+.Titulo {
+/*  padding-left: 10px;*/
+  text-align: left;
+}
+.Menu {
+  text-align: right;
+}
+
+.contenedor {
+
+  width: 900px;
+	display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+/* No se si va flex-flow */
+	flex-flow: row wrap;
+}
