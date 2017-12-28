@@ -32,9 +32,8 @@ img{
   padding: 0;
   margin-bottom: 5px;
   border-color: #02010a;
-  box-shadow: 2px 2px #02010a;
+  border: 1px solid black;
 }
-
 a{
 	color: white;
 	text-decoration: none;
@@ -54,38 +53,36 @@ a{
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
 }
-
 .container div {
 	box-sizing: border-box;
 	min-width: 150px;
-	padding: 20px;
+	padding: 10px;
 }
 
-.c1 {
-	color: black;
-	background-color: #82c3a6;
-	display: block;
-	justify-content: space-around;
-  text-align: center;
-}
-
-.c2, .c3 {
+.c1, .c2, .c3,.c4,.c5,.c6 {
 	color: black;
 	background-color: #d5c75f;
   text-align: center;
-}
-
-.c1, .c2, .c3, {
-	text-align: center;
 	width: 100%;
 }
 
+.c1 img{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+.c2 img,.c4 img,.c6 img{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.c3 img{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+
 @media (min-width: 900px) {
-	.c1 {
-		width: 100%;
-	}
-	.c2, .c3 {
-	width: 50.00%;
+	.c1, .c2, .c3,.c4,.c5,.c6 {
+	width: 33.33%;
 	}
 	.container {
 	width: 900px;
@@ -95,42 +92,14 @@ a{
 }
 
 @media screen and (max-width: 900px){
-	.c1, .c2, .c3 {
-  	font-size: 14px;
+	.c1, .c2, .c3,.c4,.c5,.c6 {
+    width: 100%;
 	}
-
   .container{
     width: 100%;
   }
 }
 
-/* Animación imagen2 */
-#imagen2 {
-	transition-duration: 1s;
-	transition-timing-function: linear;
-}
-#imagen2 img:hover {
-  transform: rotate(10deg);
-  box-shadow: 1px #82c3a6;
-  border: 2px solid black;
-}
-
-/* Animación imagen3 */
-#imagen3 img{
-	animation-duration: 2s;
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-o-animation-delay: 1s;
-	animation-delay: 1s;
-}
-
-#imagen3 img:hover {
-  position: relative;
-  top: -5px;
-  left: 20px;
-  box-shadow: 1px #82c3a6;
-  border: 2px solid black;
-}
 
 /* definiciones para Footer */
 footer{
