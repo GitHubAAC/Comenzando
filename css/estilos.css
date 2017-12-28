@@ -10,11 +10,14 @@ body {
 }
 
 header{
-	text-shadow: 2px 2px #02010a;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px #02010a;
 	color: white;
 	width: 100%;
 	align-content: center;
 	display: flex;
+  flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
 	border-top-left-radius: 10px;
@@ -97,7 +100,12 @@ a{
 @media screen and (max-width: 900px){
 	.c1, .c2, .c3 {
   	font-size: 14px;
+
 	}
+  .header{
+    text-align: center;
+    justify-content: center;
+  }
 
   .container{
     width: 100%;
