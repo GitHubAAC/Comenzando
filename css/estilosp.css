@@ -128,3 +128,16 @@ footer{
 
 	width: 25%;
 }
+@keyframes animacion {
+  0%  { margin-top: 150%;
+  }
+  50% {margin-top: -5%;
+  }
+  100% {margin-top: 0%;
+  }
+}
+
+header {
+  animation-name: animacion;
+  animation-duration: 1s;
+}
